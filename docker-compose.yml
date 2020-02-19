@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+
+    scala-api:
+        build:
+            context: .
+            dockerfile: scala-api/Dockerfile
+
+        ports:
+            - '8000:8000'
+
+        volumes:
+            - './scala-api:/scala-api'
+
+        command: >
+            sh -c 'sbt run'
+
+        environment:
+            - DB_HOST=db
+            - DB_NAME=app
+            - DB_PASS=supersecretpassword
+            - DB_USER=postgres
+            - SECRET_KEY=foo
+            - DEBUG=1
+
+        depends_on:
+            - db
+
+    db:
+        image: postgres:10-alpine
+        volumes:
+          - postgres_data:/var/lib/postgresql/data
+        environment:
+          - POSTGRES_DB=app
+          - POSTGRES_USER=postgres
+          - POSTGRES_PASSWORD=supersecretpassword
+
+volumes:
+  postgres_data:
