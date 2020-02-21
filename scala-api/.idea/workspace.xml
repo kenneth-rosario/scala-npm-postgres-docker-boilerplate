@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2f522431-6778-4239-b7d3-de4092a1d295" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.builder.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.builder.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

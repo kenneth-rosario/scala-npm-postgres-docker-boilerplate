@@ -52,3 +52,5 @@ make down
 
 * Further lines will be added to the Makefile in the future for testing
 scala and js 
+
+* If it helped you leave a star
