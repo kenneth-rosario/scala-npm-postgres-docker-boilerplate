@@ -1,0 +1,23 @@
+version: '2'
+services:
+  front-end:
+    image: node:11
+    volumes:
+      - ./front-end:/usr/src/service/
+    working_dir: /usr/src/service/
+  install:
+    extends:
+      service: front-end
+    command: npm i
+  build:
+    extends:
+      service: front-end
+    command: npm run build
+  create-bundles:
+    extends:
+      service: front-end
+    command: npm run create-bundles
+
+volumes:
+  nodemodules:
+    external: true

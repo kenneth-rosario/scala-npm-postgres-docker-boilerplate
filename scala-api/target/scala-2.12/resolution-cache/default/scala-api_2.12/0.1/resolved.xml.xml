@@ -4,7 +4,7 @@
 		module="scala-api_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20200219190028"
+		publication="20200221021351"
 	>
 		<description>
 		scala-api
@@ -32,5 +32,11 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.7" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="com.typesafe" name="config" rev="1.4.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-http_2.12" rev="10.1.11" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-stream_2.12" rev="2.5.26" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.slick" name="slick_2.12" rev="3.2.0" conf="compile->default(compile)"/>
+		<dependency org="org.postgresql" name="postgresql" rev="9.4-1201-jdbc41" conf="compile->default(compile)"/>
+		<dependency org="org.flywaydb" name="flyway-core" rev="3.2.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

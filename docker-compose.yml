@@ -8,7 +8,7 @@ services:
             dockerfile: scala-api/Dockerfile
 
         ports:
-            - '8000:8000'
+            - '8080:8080'
 
         volumes:
             - './scala-api:/scala-api'
@@ -23,12 +23,30 @@ services:
             - DB_USER=postgres
             - SECRET_KEY=foo
             - DEBUG=1
+            - DB_PORT=5432
 
         depends_on:
             - db
 
+    front-end:
+        image: node:11
+        volumes:
+            - './front-end:/usr/src/service'
+            - nodemodules:/usr/src/service/node_modules
+        command: sh -c 'npm start'
+        working_dir: '/usr/src/service'
+
+        ports:
+            - '1234:1234'
+            - '1235:1235'
+
+        depends_on:
+          - scala-api
+
     db:
         image: postgres:10-alpine
+        ports:
+            - '5432:5432'
         volumes:
           - postgres_data:/var/lib/postgresql/data
         environment:
@@ -36,5 +54,9 @@ services:
           - POSTGRES_USER=postgres
           - POSTGRES_PASSWORD=supersecretpassword
 
+
 volumes:
   postgres_data:
+  nodemodules:
+      external:
+        true

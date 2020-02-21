@@ -1,0 +1,12 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run generate-imported-components && parcel app/index.html --hmr-port 1235"
+  },
+  "author": "",
+  "license": "ISC"
+}
