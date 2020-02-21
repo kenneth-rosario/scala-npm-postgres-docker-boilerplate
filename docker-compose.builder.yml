@@ -18,6 +18,8 @@ services:
       service: front-end
     command: npm run create-bundles
 
+
+
 volumes:
   nodemodules:
     external: true
