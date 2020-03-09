@@ -29,8 +29,8 @@ make install
 make dev
 ```
 * The scala api will up and listening in port 8080; head to 
-localhost:8080/hello for hello message the front-end service
-will give an error because you need to define the start 
+localhost:8080/hello for hello message. The front-end service
+will give an error because you need to define the dev 
 script in package.json once you have chosen what js framework
 to use. This will not stop the other containers.
 
@@ -42,7 +42,7 @@ make start_scala
 * When all three services are running you will have a network
 of containers running at the specified ports ready to talk
 to each other and make requests to each other. Feel free 
-to change port numbers and environment variables as you wish
+to change port numbers and environment variables n the docker-compose.yml file as you wish
 
 * to completely clean your system of attached volumes and containers
 run 
