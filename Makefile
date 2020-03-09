@@ -8,5 +8,3 @@ start_scala:
 	docker-compose up scala-api
 down:
 	docker-compose down
-
-
