@@ -9,7 +9,7 @@
 		extra-sbtVersion="1.0"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20200221021315"/>
+		date="20200311225331"/>
 	<dependencies>
 		<module organisation="org.scala-sbt" name="sbt">
 			<revision name="1.2.8" status="release" pubdate="20181229062743" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
@@ -861,7 +861,7 @@
 					<artifact name="log4j-core" type="jar" ext="jar" status="no" details="" size="1607947" time="0" location="/root/.ivy2/cache/org.apache.logging.log4j/log4j-core/jars/log4j-core-2.11.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.11.1/log4j-core-2.11.1.jar"/>
 					</artifact>
-					<artifact name="log4j-core" type="test-jar" ext="jar" extra-classifier="tests" status="successful" details="" size="1508894" time="25314" location="/root/.ivy2/cache/org.apache.logging.log4j/log4j-core/test-jars/log4j-core-2.11.1-tests.jar">
+					<artifact name="log4j-core" type="test-jar" ext="jar" extra-classifier="tests" status="successful" details="" size="1508894" time="927" location="/root/.ivy2/cache/org.apache.logging.log4j/log4j-core/test-jars/log4j-core-2.11.1-tests.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.11.1/log4j-core-2.11.1-tests.jar"/>
 					</artifact>
 				</artifacts>

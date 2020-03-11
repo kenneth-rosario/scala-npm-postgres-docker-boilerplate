@@ -1,4 +1,2 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/scala-api/src/main/resources/db,/scala-api/target/scala-2.12/classes/db)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/scala-api/src/main/resources/db/migration,/scala-api/target/scala-2.12/classes/db/migration)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/scala-api/src/main/resources/application.conf,/scala-api/target/scala-2.12/classes/application.conf)[0m
