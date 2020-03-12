@@ -3,7 +3,7 @@ services:
   front-end:
     image: node:11
     volumes:
-      - ./front-end:/usr/src/service/
+      - ./front-end-web:/usr/src/service/
       - nodemodules:/usr/src/service/node_modules
     working_dir: /usr/src/service/
   install:
