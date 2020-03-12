@@ -40,9 +40,9 @@
 * If using windows, install make: http://gnuwin32.sourceforge.net/packages/make.htm
 
 # For Web Application
+## This Section is for teams who have decided to make a website as their front end
 
-## This Section is for teams who have decided to make a website as their fron end
-## Always run make commands from the root directory of the boilerpalte
+* Always run make commands from the root directory of the boilerpalte
 
 * All Source Code should be written in front-end-web
 
@@ -70,11 +70,11 @@
     make start_scala
 ```
 # For Native Applications:
-
 ## This Section is for teams who have decided to make a Native App as their front end
-## Always run make commands from the root directory of the boilerpalte
 
-* Install all dependancies fist:
+* Always run make commands from the root directory of the boilerpalte
+
+* Install all dependancies first:
 ```
     make install_mobile
 ```
@@ -82,7 +82,7 @@
 ```
     make dev_native
 ```
-* To start only mobile dev seerver:
+* To start only mobile dev server:
 ```
     make start_mobile_only
 ```
